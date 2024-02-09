@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-image: url(/public/Calculator.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; /* Text color */
+}
+#calculator {
+  width: 320px;
+  margin-top: 20px;
+  background-color: #162957; /* Dark gray background color */
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px dotted #ffffff; /* Border color and width */
 }
 
-.App-link {
-  color: #61dafb;
+
+#display {
+  background-color: #343a40; /* Darker gray background color for display */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff; /* Border color and width */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#answer {
+  font-size: 24px;
+}
+
+#expression {
+  font-size: 16px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  background: linear-gradient(#4e5160, #363940); /* Gradient background color for buttons */
+  color: #ffffff; /* Text color for buttons */
+}
+
+button:hover {
+  background: linear-gradient(#5f6270, #45484f); /* Darker gradient background color on hover */
 }
