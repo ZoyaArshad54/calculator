@@ -10,7 +10,8 @@ function App() {
     return /[*/+-]/.test(symbol);
   };
 
-  const buttonPress = (symbol) => {
+  const buttonPress = (symbol) => 
+  {
     if (symbol === "clear") {
       setAnswer("");
       setExpression("0");
